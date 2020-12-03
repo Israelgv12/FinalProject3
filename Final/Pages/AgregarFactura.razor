@@ -61,7 +61,8 @@
     {
         
          if((facturas.Nombre_Producto != null)  && (facturas.Nombre_Servicio != null) && (facturas.Cantidad_Prod > 0)
-        && (facturas.Monto_Total > 0) && (facturas.FechaYHora != null) && (facturas.Cliente_Id > 0)){
+        && (facturas.Monto_Total > 0) && (facturas.FechaYHora != null) 
+        && (facturas.Cliente_Id > 0)){
         Servicio.Create(facturas);
         NavigationManager.NavigateTo("FacturaInfo");
         }

@@ -1333,39 +1333,6 @@
         }
       },
       {
-        "HashCode": 1019745300,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.AddCliente",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AddCliente"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AddCliente"
-        }
-      },
-      {
-        "HashCode": -860038491,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.AddCliente",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.AddCliente"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AddCliente",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1089519207,
         "Kind": "Components.Component",
         "Name": "Final.Pages.AddFactura",
@@ -1431,39 +1398,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Final.Pages.AddFactura",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 2066829897,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.AgregarFactura",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AgregarFactura"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AgregarFactura"
-        }
-      },
-      {
-        "HashCode": 2050210800,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.AgregarFactura",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.AgregarFactura"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AgregarFactura",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -1563,6 +1497,72 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Final.Pages.AddProducto",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1019745300,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.AddCliente",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddCliente"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.AddCliente"
+        }
+      },
+      {
+        "HashCode": -860038491,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.AddCliente",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.AddCliente"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.AddCliente",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2066829897,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.AgregarFactura",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AgregarFactura"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.AgregarFactura"
+        }
+      },
+      {
+        "HashCode": 2050210800,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.AgregarFactura",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.AgregarFactura"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.AgregarFactura",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

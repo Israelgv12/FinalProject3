@@ -56,10 +56,19 @@ namespace Final.Data
     {
         [Key]
         public int IdProducto { get; set; }
+        [Required]
         public string Nombre { get; set; }
+
+        [Required]
         public int Precio { get; set; }
+
+        [Required]
         public int Cantidad { get; set; }
+
+        [Required]
         public DateTime Fecha { get; set; }
+
+        [Required]
         public string Descripcion { get; set; }
 
     }
@@ -68,9 +77,17 @@ namespace Final.Data
     {
         [Key]
         public int IdServicio { get; set; }
+
+        [Required]
         public string Nombre_Servicio { get; set; }
+
+        [Required]
         public int Precio_servicio { get; set; }
+
+        [Required]
         public DateTime Fecha { get; set; }
+
+        [Required]
         public string Descripcion { get; set; }
 
     }
@@ -79,12 +96,26 @@ namespace Final.Data
     {
         [Key]
         public int Cliente_Id { get; set; }
+
+        [Required]
         public string RNC { get; set; }
+
+        [Required]
         public string Nombre { get; set; }
+
+        [Required]
         public string Direccion { get; set; }
+
+        [Required]
         public double Latitud { get; set; }
+
+        [Required]
         public double Longitud { get; set; }
+
+        [Required]
         public string Correo { get; set; }
+
+        [Required]
         public DateTime Fecha { get; set; }
 
     }

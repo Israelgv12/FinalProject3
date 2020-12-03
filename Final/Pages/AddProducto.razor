@@ -51,9 +51,14 @@
 
     protected void CreateProducto()
     {
-                NavigationManager.NavigateTo("ProductoInfo");
+
+        if((producto.Nombre != null)  && (producto.Precio > 0) && (producto.Cantidad > 0)
+         && (producto.Descripcion != null) ){ 
+    NavigationManager.NavigateTo("ProductoInfo");
 
         Service.Create(producto);
+        }
+            
     }
     void Cancel()
     {

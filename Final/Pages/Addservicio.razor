@@ -47,8 +47,12 @@
 
     protected void CreateServicio()
     {
+
+        if((servicio.Nombre_Servicio != null)  && (servicio.Precio_servicio > 0)
+         && (servicio.Descripcion != null) ){ 
         Service.Create(servicio);
         NavigationManager.NavigateTo("servicioInfo");
+        }
     }
     void Cancel()
     {

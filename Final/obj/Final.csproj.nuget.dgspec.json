@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JOEL\\Desktop\\Final\\Final\\Final.csproj": {}
+    "C:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\final\\Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JOEL\\Desktop\\Final\\Final\\Final.csproj": {
+    "C:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\final\\Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JOEL\\Desktop\\Final\\Final\\Final.csproj",
+        "projectUniqueName": "C:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\final\\Final.csproj",
         "projectName": "Final",
-        "projectPath": "C:\\Users\\JOEL\\Desktop\\Final\\Final\\Final.csproj",
+        "projectPath": "C:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\final\\Final.csproj",
         "packagesPath": "C:\\Users\\JOEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JOEL\\Desktop\\Final\\Final\\obj\\",
+        "outputPath": "C:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\final\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JOEL\\AppData\\Roaming\\NuGet\\NuGet.Config",

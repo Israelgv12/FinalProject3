@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Final.csproj",
+  "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Final.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -11,6 +11,92 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
+      {
+        "HashCode": 1643594962,
+        "Kind": "Components.Component",
+        "Name": "Final.App",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.App"
+        }
+      },
+      {
+        "HashCode": -860588758,
+        "Kind": "Components.Component",
+        "Name": "Final.App",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -774797239,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.EditFacturado",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditFacturado"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.EditFacturado"
+        }
+      },
+      {
+        "HashCode": -1098828115,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.EditFacturado",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.EditFacturado"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.EditFacturado",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
       {
         "HashCode": -1995302105,
         "Kind": "Components.Component",
@@ -41,112 +127,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Final.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 438363082,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.Editarservicio",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Editarservicio"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Editarservicio"
-        }
-      },
-      {
-        "HashCode": -1712985528,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.Editarservicio",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.Editarservicio"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Editarservicio",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1213055145,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.EditClientes",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditClientes"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.EditClientes"
-        }
-      },
-      {
-        "HashCode": -1052156562,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.EditClientes",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.EditClientes"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.EditClientes",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -204,47 +184,100 @@
         }
       },
       {
-        "HashCode": 2066829897,
+        "HashCode": 1353328310,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.AgregarFactura",
+        "Name": "Final.Pages.ListadoExistencia",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AgregarFactura"
+            "TagName": "ListadoExistencia"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AgregarFactura"
+          "Common.TypeName": "Final.Pages.ListadoExistencia"
         }
       },
       {
-        "HashCode": 2050210800,
+        "HashCode": 575525207,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.AgregarFactura",
+        "Name": "Final.Pages.ListadoExistencia",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.AgregarFactura"
+            "TagName": "Final.Pages.ListadoExistencia"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AgregarFactura",
+          "Common.TypeName": "Final.Pages.ListadoExistencia",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1106639540,
+        "HashCode": -1213055145,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.AddFactura2",
+        "Name": "Final.Pages.EditClientes",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AddFactura2"
+            "TagName": "EditClientes"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.EditClientes"
+        }
+      },
+      {
+        "HashCode": -1052156562,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.EditClientes",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.EditClientes"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.EditClientes",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1717943418,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.Print",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Print"
           }
         ],
         "BoundAttributes": [
@@ -267,18 +300,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AddFactura2"
+          "Common.TypeName": "Final.Pages.Print"
         }
       },
       {
-        "HashCode": -1723811275,
+        "HashCode": 1451069087,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.AddFactura2",
+        "Name": "Final.Pages.Print",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.AddFactura2"
+            "TagName": "Final.Pages.Print"
           }
         ],
         "BoundAttributes": [
@@ -301,195 +334,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AddFactura2",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1694271431,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.Addservicio",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Addservicio"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Addservicio"
-        }
-      },
-      {
-        "HashCode": 1050282529,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.Addservicio",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.Addservicio"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Addservicio",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2079915485,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.AddProducto",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AddProducto"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AddProducto"
-        }
-      },
-      {
-        "HashCode": 1696190864,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.AddProducto",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.AddProducto"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AddProducto",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2031202931,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.Eliminarservicio",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Eliminarservicio"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Eliminarservicio"
-        }
-      },
-      {
-        "HashCode": -2140575142,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.Eliminarservicio",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.Eliminarservicio"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Eliminarservicio",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -299741027,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.EditFact",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditFact"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentfactID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentfactID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.EditFact"
-        }
-      },
-      {
-        "HashCode": -325739183,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.EditFact",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.EditFact"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentfactID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentfactID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.EditFact",
+          "Common.TypeName": "Final.Pages.Print",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -547,59 +392,6 @@
         }
       },
       {
-        "HashCode": 946490498,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.DeletePropFacturado",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DeletePropFacturado"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.DeletePropFacturado"
-        }
-      },
-      {
-        "HashCode": 2064927620,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.DeletePropFacturado",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.DeletePropFacturado"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.DeletePropFacturado",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -891779234,
         "Kind": "Components.Component",
         "Name": "Final.Pages.Facturar",
@@ -633,35 +425,71 @@
         }
       },
       {
-        "HashCode": 205191781,
+        "HashCode": -2076560707,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.FacturadoInfo",
+        "Name": "Final.Pages.EditProd",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FacturadoInfo"
+            "TagName": "EditProd"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentfactID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentfactID"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.FacturadoInfo"
+          "Common.TypeName": "Final.Pages.EditProd"
         }
       },
       {
-        "HashCode": 1138349571,
+        "HashCode": 1165033717,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.FacturadoInfo",
+        "Name": "Final.Pages.EditProd",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.FacturadoInfo"
+            "TagName": "Final.Pages.EditProd"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentfactID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentfactID"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.FacturadoInfo",
+          "Common.TypeName": "Final.Pages.EditProd",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -772,68 +600,256 @@
         }
       },
       {
-        "HashCode": 1353328310,
+        "HashCode": 946490498,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.ListadoExistencia",
+        "Name": "Final.Pages.DeletePropFacturado",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ListadoExistencia"
+            "TagName": "DeletePropFacturado"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ListadoExistencia"
+          "Common.TypeName": "Final.Pages.DeletePropFacturado"
         }
       },
       {
-        "HashCode": 575525207,
+        "HashCode": 2064927620,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.ListadoExistencia",
+        "Name": "Final.Pages.DeletePropFacturado",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.ListadoExistencia"
+            "TagName": "Final.Pages.DeletePropFacturado"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ListadoExistencia",
+          "Common.TypeName": "Final.Pages.DeletePropFacturado",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1088091697,
+        "HashCode": -1392396529,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.MasVendidos",
+        "Name": "Final.Pages.Prueba",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "MasVendidos"
+            "TagName": "Prueba"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.MasVendidos"
+          "Common.TypeName": "Final.Pages.Prueba"
         }
       },
       {
-        "HashCode": -1241870185,
+        "HashCode": 1802556355,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.MasVendidos",
+        "Name": "Final.Pages.Prueba",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.MasVendidos"
+            "TagName": "Final.Pages.Prueba"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.MasVendidos",
+          "Common.TypeName": "Final.Pages.Prueba",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 351656748,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.ServicioInfo",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ServicioInfo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.ServicioInfo"
+        }
+      },
+      {
+        "HashCode": -228558132,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.ServicioInfo",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.ServicioInfo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.ServicioInfo",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1542800301,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.ClientesEspecial",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ClientesEspecial"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.ClientesEspecial"
+        }
+      },
+      {
+        "HashCode": -2103539162,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.ClientesEspecial",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.ClientesEspecial"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.ClientesEspecial",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1106639540,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.AddFactura2",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddFactura2"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentfactID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentfactID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.AddFactura2"
+        }
+      },
+      {
+        "HashCode": -1723811275,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.AddFactura2",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.AddFactura2"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentfactID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentfactID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.AddFactura2",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 205191781,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.FacturadoInfo",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FacturadoInfo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.FacturadoInfo"
+        }
+      },
+      {
+        "HashCode": 1138349571,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.FacturadoInfo",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.FacturadoInfo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.FacturadoInfo",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -891,174 +907,6 @@
         }
       },
       {
-        "HashCode": 351656748,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.ServicioInfo",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ServicioInfo"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ServicioInfo"
-        }
-      },
-      {
-        "HashCode": -228558132,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.ServicioInfo",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.ServicioInfo"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ServicioInfo",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -665972179,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.ClienteInfo",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ClienteInfo"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ClienteInfo"
-        }
-      },
-      {
-        "HashCode": -817333146,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.ClienteInfo",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.ClienteInfo"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ClienteInfo",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2076560707,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.EditProd",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditProd"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentfactID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentfactID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.EditProd"
-        }
-      },
-      {
-        "HashCode": 1165033717,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.EditProd",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.EditProd"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentID"
-            }
-          },
-          {
-            "Kind": "Components.Component",
-            "Name": "CurrentfactID",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "CurrentfactID"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.EditProd",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 792553172,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.ProductoInfo",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProductoInfo"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ProductoInfo"
-        }
-      },
-      {
-        "HashCode": 1814586744,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.ProductoInfo",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.ProductoInfo"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ProductoInfo",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1662934780,
         "Kind": "Components.Component",
         "Name": "Final.Pages.AddFacturado",
@@ -1092,47 +940,47 @@
         }
       },
       {
-        "HashCode": -1385687150,
+        "HashCode": -1724841404,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.Cumpleaños",
+        "Name": "Final.Pages.Mapa",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Cumpleaños"
+            "TagName": "Mapa"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Cumpleaños"
+          "Common.TypeName": "Final.Pages.Mapa"
         }
       },
       {
-        "HashCode": 1932846512,
+        "HashCode": -1817083768,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.Cumpleaños",
+        "Name": "Final.Pages.Mapa",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.Cumpleaños"
+            "TagName": "Final.Pages.Mapa"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Cumpleaños",
+          "Common.TypeName": "Final.Pages.Mapa",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -774797239,
+        "HashCode": -2031202931,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.EditFacturado",
+        "Name": "Final.Pages.Eliminarservicio",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "EditFacturado"
+            "TagName": "Eliminarservicio"
           }
         ],
         "BoundAttributes": [
@@ -1147,18 +995,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.EditFacturado"
+          "Common.TypeName": "Final.Pages.Eliminarservicio"
         }
       },
       {
-        "HashCode": -1098828115,
+        "HashCode": -2140575142,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.EditFacturado",
+        "Name": "Final.Pages.Eliminarservicio",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.EditFacturado"
+            "TagName": "Final.Pages.Eliminarservicio"
           }
         ],
         "BoundAttributes": [
@@ -1173,40 +1021,7 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.EditFacturado",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1392396529,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.Prueba",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Prueba"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Prueba"
-        }
-      },
-      {
-        "HashCode": 1802556355,
-        "Kind": "Components.Component",
-        "Name": "Final.Pages.Prueba",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.Pages.Prueba"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Prueba",
+          "Common.TypeName": "Final.Pages.Eliminarservicio",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -1264,35 +1079,289 @@
         }
       },
       {
-        "HashCode": -1439606663,
+        "HashCode": 792553172,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.FacturaInfo",
+        "Name": "Final.Pages.ProductoInfo",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FacturaInfo"
+            "TagName": "ProductoInfo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.FacturaInfo"
+          "Common.TypeName": "Final.Pages.ProductoInfo"
         }
       },
       {
-        "HashCode": -373937536,
+        "HashCode": 1814586744,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.FacturaInfo",
+        "Name": "Final.Pages.ProductoInfo",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.FacturaInfo"
+            "TagName": "Final.Pages.ProductoInfo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.FacturaInfo",
+          "Common.TypeName": "Final.Pages.ProductoInfo",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1385687150,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.Cumpleaños",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Cumpleaños"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.Cumpleaños"
+        }
+      },
+      {
+        "HashCode": 1932846512,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.Cumpleaños",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.Cumpleaños"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.Cumpleaños",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -299741027,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.EditFact",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditFact"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentfactID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentfactID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.EditFact"
+        }
+      },
+      {
+        "HashCode": -325739183,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.EditFact",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.EditFact"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentfactID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentfactID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.EditFact",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 438363082,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.Editarservicio",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Editarservicio"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.Editarservicio"
+        }
+      },
+      {
+        "HashCode": -1712985528,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.Editarservicio",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.Editarservicio"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CurrentID",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "CurrentID"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.Editarservicio",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1088091697,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.MasVendidos",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MasVendidos"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.MasVendidos"
+        }
+      },
+      {
+        "HashCode": -1241870185,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.MasVendidos",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.MasVendidos"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.MasVendidos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -665972179,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.ClienteInfo",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ClienteInfo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.ClienteInfo"
+        }
+      },
+      {
+        "HashCode": -817333146,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.ClienteInfo",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.ClienteInfo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.ClienteInfo",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1019745300,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.AddCliente",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AddCliente"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.AddCliente"
+        }
+      },
+      {
+        "HashCode": -860038491,
+        "Kind": "Components.Component",
+        "Name": "Final.Pages.AddCliente",
+        "AssemblyName": "Final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Final.Pages.AddCliente"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Final.Pages.AddCliente",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -1366,187 +1435,167 @@
         }
       },
       {
-        "HashCode": -1724841404,
+        "HashCode": 2066829897,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.Mapa",
+        "Name": "Final.Pages.AgregarFactura",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Mapa"
+            "TagName": "AgregarFactura"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Mapa"
+          "Common.TypeName": "Final.Pages.AgregarFactura"
         }
       },
       {
-        "HashCode": -1817083768,
+        "HashCode": 2050210800,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.Mapa",
+        "Name": "Final.Pages.AgregarFactura",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.Mapa"
+            "TagName": "Final.Pages.AgregarFactura"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Mapa",
+          "Common.TypeName": "Final.Pages.AgregarFactura",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1019745300,
+        "HashCode": -1439606663,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.AddCliente",
+        "Name": "Final.Pages.FacturaInfo",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AddCliente"
+            "TagName": "FacturaInfo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AddCliente"
+          "Common.TypeName": "Final.Pages.FacturaInfo"
         }
       },
       {
-        "HashCode": -860038491,
+        "HashCode": -373937536,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.AddCliente",
+        "Name": "Final.Pages.FacturaInfo",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.AddCliente"
+            "TagName": "Final.Pages.FacturaInfo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.AddCliente",
+          "Common.TypeName": "Final.Pages.FacturaInfo",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1542800301,
+        "HashCode": -1694271431,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.ClientesEspecial",
+        "Name": "Final.Pages.Addservicio",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ClientesEspecial"
+            "TagName": "Addservicio"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ClientesEspecial"
+          "Common.TypeName": "Final.Pages.Addservicio"
         }
       },
       {
-        "HashCode": -2103539162,
+        "HashCode": 1050282529,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.ClientesEspecial",
+        "Name": "Final.Pages.Addservicio",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.ClientesEspecial"
+            "TagName": "Final.Pages.Addservicio"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.ClientesEspecial",
+          "Common.TypeName": "Final.Pages.Addservicio",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -88105103,
+        "HashCode": -2079915485,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.Print",
+        "Name": "Final.Pages.AddProducto",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Print"
+            "TagName": "AddProducto"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Print"
+          "Common.TypeName": "Final.Pages.AddProducto"
         }
       },
       {
-        "HashCode": 1345321683,
+        "HashCode": 1696190864,
         "Kind": "Components.Component",
-        "Name": "Final.Pages.Print",
+        "Name": "Final.Pages.AddProducto",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Pages.Print"
+            "TagName": "Final.Pages.AddProducto"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Pages.Print",
+          "Common.TypeName": "Final.Pages.AddProducto",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1066675578,
+        "HashCode": -436940414,
         "Kind": "Components.Component",
-        "Name": "Final.Shared.SurveyPrompt",
+        "Name": "Final.Shared.LoginDisplay",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "LoginDisplay"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Shared.SurveyPrompt"
+          "Common.TypeName": "Final.Shared.LoginDisplay"
         }
       },
       {
-        "HashCode": 1754409744,
+        "HashCode": 1065407691,
         "Kind": "Components.Component",
-        "Name": "Final.Shared.SurveyPrompt",
+        "Name": "Final.Shared.LoginDisplay",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
+            "TagName": "Final.Shared.LoginDisplay"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Shared.SurveyPrompt",
+          "Common.TypeName": "Final.Shared.LoginDisplay",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -1680,68 +1729,55 @@
         }
       },
       {
-        "HashCode": -436940414,
+        "HashCode": 1066675578,
         "Kind": "Components.Component",
-        "Name": "Final.Shared.LoginDisplay",
+        "Name": "Final.Shared.SurveyPrompt",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "LoginDisplay"
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Shared.LoginDisplay"
+          "Common.TypeName": "Final.Shared.SurveyPrompt"
         }
       },
       {
-        "HashCode": 1065407691,
+        "HashCode": 1754409744,
         "Kind": "Components.Component",
-        "Name": "Final.Shared.LoginDisplay",
+        "Name": "Final.Shared.SurveyPrompt",
         "AssemblyName": "Final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Final.Shared.LoginDisplay"
+            "TagName": "Final.Shared.SurveyPrompt"
           }
         ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.Shared.LoginDisplay",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1643594962,
-        "Kind": "Components.Component",
-        "Name": "Final.App",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
+        "BoundAttributes": [
           {
-            "TagName": "App"
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.App"
-        }
-      },
-      {
-        "HashCode": -860588758,
-        "Kind": "Components.Component",
-        "Name": "Final.App",
-        "AssemblyName": "Final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Final.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Final.App",
+          "Common.TypeName": "Final.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -17337,298 +17373,298 @@
   "RootNamespace": "Final",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Editarservicio.razor",
-      "TargetPath": "Pages\\Editarservicio.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\EditClientes.razor",
-      "TargetPath": "Pages\\EditClientes.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\BorrarFactura.razor",
-      "TargetPath": "Pages\\BorrarFactura.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\AgregarFactura.razor",
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\AgregarFactura.razor",
       "TargetPath": "Pages\\AgregarFactura.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Print.razor",
-      "TargetPath": "Pages\\Print.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\AddFactura2.razor",
-      "TargetPath": "Pages\\AddFactura2.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Addservicio.razor",
-      "TargetPath": "Pages\\Addservicio.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\AddProducto.razor",
-      "TargetPath": "Pages\\AddProducto.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Eliminarservicio.razor",
-      "TargetPath": "Pages\\Eliminarservicio.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\EditFact.razor",
-      "TargetPath": "Pages\\EditFact.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\EditProducto.razor",
-      "TargetPath": "Pages\\EditProducto.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\DeletePropFacturado.razor",
-      "TargetPath": "Pages\\DeletePropFacturado.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Facturar.razor",
-      "TargetPath": "Pages\\Facturar.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\FacturadoInfo.razor",
-      "TargetPath": "Pages\\FacturadoInfo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\DeleteProducto.razor",
-      "TargetPath": "Pages\\DeleteProducto.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\EditarFactura.razor",
-      "TargetPath": "Pages\\EditarFactura.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\ListadoExistencia.razor",
-      "TargetPath": "Pages\\ListadoExistencia.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\MasVendidos.razor",
-      "TargetPath": "Pages\\MasVendidos.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\DeletFact.razor",
-      "TargetPath": "Pages\\DeletFact.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\ServicioInfo.razor",
-      "TargetPath": "Pages\\ServicioInfo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\ClienteInfo.razor",
-      "TargetPath": "Pages\\ClienteInfo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\EditProd.razor",
-      "TargetPath": "Pages\\EditProd.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\ProductoInfo.razor",
-      "TargetPath": "Pages\\ProductoInfo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\AddFacturado.razor",
-      "TargetPath": "Pages\\AddFacturado.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Cumpleaños.razor",
-      "TargetPath": "Pages\\Cumpleaños.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\EditFacturado.razor",
-      "TargetPath": "Pages\\EditFacturado.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Prueba.razor",
-      "TargetPath": "Pages\\Prueba.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\DeleteClientes.razor",
-      "TargetPath": "Pages\\DeleteClientes.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\FacturaInfo.razor",
-      "TargetPath": "Pages\\FacturaInfo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Shared\\LoginDisplay.razor",
-      "TargetPath": "Shared\\LoginDisplay.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\AddFactura.razor",
-      "TargetPath": "Pages\\AddFactura.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\Mapa.razor",
-      "TargetPath": "Pages\\Mapa.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\AddCliente.razor",
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\AddCliente.razor",
       "TargetPath": "Pages\\AddCliente.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Pages\\ClientesEspecial.razor",
-      "TargetPath": "Pages\\ClientesEspecial.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\App.razor",
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\App.razor",
       "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\EditFacturado.razor",
+      "TargetPath": "Pages\\EditFacturado.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\BorrarFactura.razor",
+      "TargetPath": "Pages\\BorrarFactura.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\FacturaInfo.razor",
+      "TargetPath": "Pages\\FacturaInfo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\ListadoExistencia.razor",
+      "TargetPath": "Pages\\ListadoExistencia.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Shared\\LoginDisplay.razor",
+      "TargetPath": "Shared\\LoginDisplay.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\AddProducto.razor",
+      "TargetPath": "Pages\\AddProducto.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\EditClientes.razor",
+      "TargetPath": "Pages\\EditClientes.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Print.razor",
+      "TargetPath": "Pages\\Print.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\EditProducto.razor",
+      "TargetPath": "Pages\\EditProducto.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Facturar.razor",
+      "TargetPath": "Pages\\Facturar.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\EditProd.razor",
+      "TargetPath": "Pages\\EditProd.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\DeleteProducto.razor",
+      "TargetPath": "Pages\\DeleteProducto.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\EditarFactura.razor",
+      "TargetPath": "Pages\\EditarFactura.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\DeletePropFacturado.razor",
+      "TargetPath": "Pages\\DeletePropFacturado.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Prueba.razor",
+      "TargetPath": "Pages\\Prueba.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\ServicioInfo.razor",
+      "TargetPath": "Pages\\ServicioInfo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\daniel\\source\\repos\\Final\\Final\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\ClientesEspecial.razor",
+      "TargetPath": "Pages\\ClientesEspecial.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\AddFactura2.razor",
+      "TargetPath": "Pages\\AddFactura2.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\FacturadoInfo.razor",
+      "TargetPath": "Pages\\FacturadoInfo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\DeletFact.razor",
+      "TargetPath": "Pages\\DeletFact.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\AddFactura.razor",
+      "TargetPath": "Pages\\AddFactura.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\AddFacturado.razor",
+      "TargetPath": "Pages\\AddFacturado.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Mapa.razor",
+      "TargetPath": "Pages\\Mapa.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Eliminarservicio.razor",
+      "TargetPath": "Pages\\Eliminarservicio.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\DeleteClientes.razor",
+      "TargetPath": "Pages\\DeleteClientes.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\ProductoInfo.razor",
+      "TargetPath": "Pages\\ProductoInfo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\ClienteInfo.razor",
+      "TargetPath": "Pages\\ClienteInfo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Cumpleaños.razor",
+      "TargetPath": "Pages\\Cumpleaños.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\EditFact.razor",
+      "TargetPath": "Pages\\EditFact.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Editarservicio.razor",
+      "TargetPath": "Pages\\Editarservicio.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\Addservicio.razor",
+      "TargetPath": "Pages\\Addservicio.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\MasVendidos.razor",
+      "TargetPath": "Pages\\MasVendidos.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\JOEL\\Downloads\\Compressed\\FinalProject3\\Final\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

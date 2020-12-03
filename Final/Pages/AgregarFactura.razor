@@ -1,0 +1,71 @@
+﻿@page "/AgregarFactura"
+@using Final.Data
+@inject FacturaService Servicio
+@inject NavigationManager NavigationManager
+<h3>Agregar Factura</h3>
+
+
+<form>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="Nombre">Nombre del Producto</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre del producto" @bind="@facturas.Nombre_Producto">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputprecio">Nombre del Servicio</label>
+            <input type="text" class="form-control" id="precio" placeholder="Nombre del servicio" @bind="@facturas.Nombre_Servicio">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputcantidad">Cantidad de Producto</label>
+            <input type="text" class="form-control" id="cantidad" placeholder="cantidad del producto" @bind="@facturas.Cantidad_Prod">
+        </div>
+       
+        <div class="form-group col-md-4">
+            <label for="inputcantidad">Monto Total</label>
+            <input type="text" class="form-control" id="cantidad" placeholder="Monto total" @bind="@facturas.Monto_Total">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputcantidad">ITBIS</label>
+            <input type="text" class="form-control" id="cantidad" placeholder="Itbis" @bind="@facturas.Itbis">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="fecha">Fecha y Hora </label>
+            <input type="string" class="form-control" id="fecha" @bind="@facturas.FechaYHora">
+        </div>
+        <div class="form-group">
+            <label for="Descripcion">ClienteId</label>
+            <input type="text" class="form-control" id="Descripcion" placeholder="Cliente id" @bind="@facturas.Cliente_Id">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@CrearFactura" value="Save" />
+                <input type="button" class="btn btn-danger" @onclick="@Cancel" value="Cancel" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
+
+
+
+@code {
+
+    Factura facturas = new Factura();
+
+    protected void CrearFactura()
+    {
+        Servicio.Create(facturas);
+        NavigationManager.NavigateTo("FacturaInfo");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("FacturaInfo");
+
+    }
+
+}

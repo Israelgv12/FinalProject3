@@ -1,0 +1,74 @@
+﻿@page "/DeletePropFacturado/{CurrentID}"
+@using Final.Data
+@inject PFacturadoService Service
+@inject NavigationManager NavigationManager
+
+<h3>Eliminar Producto Facturado</h3>
+<hr />
+<h3>Estas seguro que quieres borrar esto?</h3>
+
+<div class="row">
+    <div class="form-group col-md-4">
+        <label>Producto Facturado ID:</label>
+        <label>@factura.IdProducto_Facturados</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Nombre:</label>
+        <label>@factura.Nombre</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Cantidad:</label>
+        <label>@factura.Cantidad</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Descripcion:</label>
+        <label>@factura.Descripcion</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Id Factura:</label>
+        <label>@factura.Id_Factura</label>
+    </div>
+
+
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input type="button" class="btn btn-primary" @onclick="@BorrarFacturado" value="Delete" />
+            <input type="button" class="btn btn-danger" @onclick="@Cancel" value="Cancel" />
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+@code {
+
+    [Parameter]
+    public string CurrentID { get; set; }
+    Producto_Facturado factura = new Producto_Facturado();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        factura = await Task.Run(() => Service.GetProductoFacturadoById(Convert.ToInt32(CurrentID)));
+
+    }
+
+    protected void BorrarFacturado()
+    {
+        Service.DeleteProductoFacturado(factura);
+        NavigationManager.NavigateTo("FacturadoInfo");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("FacturadoInfo");
+
+    }
+
+}
+

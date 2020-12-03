@@ -1,0 +1,147 @@
+﻿@page "/Print/{CurrentID}"
+@using Final.Data
+@inject PFacturadoService ServiceProductoF
+@inject FacturaService Service
+@inject NavigationManager NavigationManager
+@inject ClienteService ServiceCL
+
+    <center>
+        <h1>Factura</h1>
+
+        @foreach (var cl in client)
+        {
+            @foreach (var fs in facturas)
+            {
+
+                @if (fs.Id_Factura == Convert.ToInt32(CurrentID))
+                {
+                    @if (fs.Cliente_Id == cl.Cliente_Id)
+                    {
+                        <h4>Cliente: @cl.Nombre</h4>
+                    }
+
+
+                }
+            }
+        }
+
+        <table class="table table-striped">
+
+            <thead>
+                
+                    
+                <tr>
+                    <th class="alignright">Producto/Servicio</th>
+                    <th class="alignright">Precio </th>
+                    <th class="alignright">Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var pf in prodfact)
+                {
+                      @if (pf.Id_Factura == Convert.ToInt32(CurrentID))
+                {
+                    @if(pf.Cantidad > 0){
+                    <tr class="total">
+
+                        <td>@pf.Nombre</td>
+                        <td class="alignmiddle">@pf.Precio </td>
+                        <td class="alignright">@pf.Cantidad</td>
+                   </tr>
+                   }
+                   else{
+                        <td>@pf.Nombre</td>
+                        <td class="alignmiddle">@pf.Precio </td>
+                   }
+                }
+                }
+                
+            </tbody>
+        </table>
+
+<br><br>
+
+        <table class="body-wrap">
+<tbody>
+                @foreach (var fc in facturas)
+                {
+                    
+                    @if (fc.Id_Factura == Convert.ToInt32(CurrentID))
+                    {
+                        
+
+                        <tr class="total">
+                            <td class="alignright"width="80%">Sub.Total</td>
+                            <td class="alignright">@fc.Monto_Total</td>
+                        </tr>
+                        <tr class="total">
+                            <td class="alignright" width="80%">Itbis(18% de su compra)</td>
+                            <td class="alignright">@fc.Itbis</td>
+                        </tr>
+                        <tr class="table-success" style="border: 1px solid black;">
+                            <td class="alignright" width="80%">Total</td>
+                            <td class="alignright">@total</td>
+                        </tr>
+
+                                                <tr class="total">
+                            <td class="alignright" width="80%">Fecha</td>
+                            <td class="alignright">@fc.FechaYHora</td>
+                        </tr>
+
+                    }
+                }
+                </tbody>
+                        </table>
+
+
+
+
+
+        <br>
+        <br>
+
+        <button class="btn btn-success oi oi-print" onclick="print()">  Imprimir Factura </button>
+
+        <br>
+        <br>
+
+        <a class="btn btn-warning" href="FacturaInfo">
+            <span class="oi oi-action-undo" aria-hidden="true">Volver</span>
+        </a>
+    </center>
+    @code {
+        double total;
+
+        [Parameter]
+        public string CurrentID { get; set; }
+
+        [Parameter]
+        public string CurrentfactID { get; set; }
+        List<Producto_Facturado> prodfact = new List<Producto_Facturado>();
+
+        List<Factura> facturas = new List<Factura>();
+
+        List<ClienteFinal> client = new List<ClienteFinal>();
+
+
+
+        protected override async Task OnInitializedAsync()
+        {
+
+            facturas = await Task.Run(() => Service.GetFactura());
+            prodfact = await Task.Run(() => ServiceProductoF.GetProductoFacturado());
+            client = await Task.Run(() => ServiceCL.GetClientes());
+
+
+            foreach (var fc in facturas)
+            {
+                if (fc.Id_Factura == Convert.ToInt32(CurrentID))
+                {
+                    total = fc.Monto_Total + fc.Itbis;
+                }
+            }
+        }
+
+
+    }

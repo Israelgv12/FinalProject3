@@ -1,0 +1,98 @@
+@page "/EditFact/{CurrentfactID}/{CurrentID}"
+@using Final.Data
+@inject FacturaService Service
+@inject ProductoService ServiceP
+@inject PFacturadoService ServiceProductoF
+@inject NavigationManager NavigationManager
+
+<h3>Confirmar su compra</h3>
+<p>De click an Confirmar para validar su compra </p>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@UpdateFactura" value="Confirmar" />
+                <input type="button" class="btn btn-danger" @onclick="@Cancel" value="Cancel" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+@code {
+
+    [Parameter]
+    public string CurrentID { get; set; }
+
+    [Parameter]
+    public string CurrentfactID { get; set; }
+    Factura facturas = new Factura();
+
+       List<Producto> product = new List<Producto>();
+
+List<Producto_Facturado> pfacturado = new List<Producto_Facturado>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        facturas = await Task.Run(() => Service.GetFacturaById(Convert.ToInt32(CurrentfactID)));
+                product = await Task.Run(() => ServiceP.GetProductos());
+         pfacturado = await Task.Run(() => ServiceProductoF.GetProductoFacturado());
+
+
+    }
+
+    protected void UpdateFactura()
+    {
+   foreach(var item in pfacturado){
+if(item.Id_Factura == facturas.Id_Factura){
+ if(item.Cantidad > 0){
+montoTotal += item.Precio*item.Cantidad;
+productoCant = item.Cantidad;
+Nprod= item.Nombre;
+}
+else{
+montoTotal = item.Precio;
+productoCant = item.Cantidad;
+Nprod= item.Nombre;
+}
+}
+
+foreach(var p in product){
+if(item.Nombre == p.Nombre){
+idprod = p.IdProducto;
+
+   }
+}
+   
+   }
+   idpr = idprod.ToString();
+   itbis = montoTotal*0.18;
+
+        facturas.Nombre_Producto = Nprod ;
+   facturas.Nombre_Servicio ="Servicio al cliente";
+  facturas.Cantidad_Prod = productoCant;
+  facturas.Monto_Total = montoTotal;
+  facturas.Itbis = itbis;
+        Service.UpdateFactura(facturas);
+        NavigationManager.NavigateTo("EditProd"  + "/" + CurrentID + "/" + CurrentfactID);
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("deletfact" + "/" + CurrentfactID);
+
+    }
+
+    int montoTotal;
+    int productoCant;
+    double itbis;
+    string Nprod;
+    int idprod;
+    string idpr;
+}

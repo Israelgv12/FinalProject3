@@ -1,0 +1,46 @@
+@page "/deletfact/{CurrentID}"
+@using Final.Data
+@inject FacturaService Service
+@inject NavigationManager NavigationManager
+<h3>Cancelar factura</h3>
+
+<p>De click en cancelar factura para cancelarla.</p>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input type="button" class="btn btn-primary" @onclick="@DeleteFactura" value="Cancelar factura" />
+            <input type="button" class="btn btn-danger" @onclick="@Cancel" value="Volver" />
+
+        </div>
+
+    </div>
+
+</div>
+
+@code {
+
+    [Parameter]
+    public string CurrentID { get; set; }
+    Factura factura = new Factura();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        factura = await Task.Run(() => Service.GetFacturaById(Convert.ToInt32(CurrentID)));
+
+    }
+
+    protected void DeleteFactura()
+    {
+        Service.DeleteFactura(factura);
+        NavigationManager.NavigateTo("Facturar");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("Facturar");
+
+    }
+
+}

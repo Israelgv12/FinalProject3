@@ -1,0 +1,77 @@
+﻿@page "/FacturaInfo"
+@using Final.Data
+@inject FacturaService Servicio
+
+
+
+<NavLink class="nav-link" href="AgregarFactura">
+    <span class="oi oi-plus" aria-hidden="true"></span>&nbsp; Agregar Factura
+
+</NavLink>
+
+<h3>Listado de Facturas</h3>
+
+@if (facturas == null)
+{
+    <p><em>No hay Facturas Agregadas.....</em></p>
+
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>FacturaId</th>
+                <th>Nombre Producto</th>
+                <th>Nombre Servicio</th>
+                <th>Cantidad Producto </th>
+                <th>Monto Total</th>
+                <th>ITBIS</th>
+                <th>Fecha y Hora</th>
+                <th>ClienteId</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prop in facturas)
+            {
+                <tr>
+                    <td>@prop.Id_Factura</td>
+                    <td>@prop.Nombre_Producto</td>
+                    <td>@prop.Nombre_Servicio</td>
+                    <td>@prop.Cantidad_Prod</td>
+                    <td>@prop.Monto_Total</td>
+                    <td>@prop.Itbis</td>
+                    <td>@prop.FechaYHora</td>
+                    <td>@prop.Cliente_Id</td>
+                    <td>
+                        <a class="nav-link" href="EditarFactura/@prop.Id_Factura">
+                            <span class="oi oi-pencil" aria-hidden="true"></span>Editar
+                        </a>
+                        <a class="nav-link" href="BorrarFactura/@prop.Id_Factura">
+                            <span class="oi oi-trash" aria-hidden="true"></span>Borrar
+                        </a>
+                        <a class="nav-link" href="Print/@prop.Id_Factura">
+                            <span class="oi oi-print" aria-hidden="true"></span>Imprimir
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+}
+
+
+
+@code {
+
+    List<Factura> facturas = new List<Factura>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        facturas = await Task.Run(() => Servicio.GetFactura());
+
+    }
+
+}

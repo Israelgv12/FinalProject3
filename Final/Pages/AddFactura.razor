@@ -1,0 +1,241 @@
+@page "/AddFactura/{CurrentID}/{CurrentfactID}"
+@using Final.Data
+@using Microsoft.AspNetCore.Identity
+@inject ProductoService Service
+@inject ClienteService ServiceCl
+@inject FacturaService ServiceF
+@inject ProductoServicio2 ServiceServicio
+@inject PFacturadoService ServiceProductoF
+@inject NavigationManager NavigationManager
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+
+@if (product != null)
+{
+    <label for="">Seleccione el producto que desea comprar</label>
+    <br>
+    <select class="form-control" @bind="selected">
+        <option value="">Seleccione producto</option>
+        @foreach (var prop in product)
+        {
+            @if (prop.Cantidad > 0)
+            {
+                <option value="@prop.Nombre">@prop.Nombre</option>
+            }
+        }
+
+
+    </select>
+    <br>
+
+    <br>
+    @foreach (var prop in product)
+    {
+        @if (prop.Nombre == selected)
+        {
+            <b>Cantidad de @prop.Nombre disponibles: @prop.Cantidad</b>
+        }
+
+
+    }
+
+
+    <br>
+    <label for="">Seleccione la cantidad que desea comprar</label>
+    <br>
+    <input type="number" class="form-control" @bind="canti">
+    <br>
+    <br>
+    <input type="button" class="btn btn-success oi oi-cart" @onclick="@AgregarPfacturado" value="Añadir producto al carrito">
+    <br>
+    <label for="">Seleccione el servicio que desea adquirir</label>
+    <br>
+    <select class="form-control" @bind="selectedserv">
+        <option value="">Seleccione servicio</option>
+        @foreach (var prop in servvice)
+        {
+
+            <option value="@prop.Nombre_Servicio">@prop.Nombre_Servicio</option>
+
+        }
+
+
+    </select>
+    <br>
+
+    <br>
+    <br>
+    <input type="button" class="btn btn-primary    oi oi-cart" @onclick="@agregarservice" value="Añadir servicio al carrito">
+
+    <br>
+    <br>
+
+
+
+    <br>
+    <br>
+    <h3>Productos y servicios en el carrito: </h3>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Descripcion</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in prodfact)
+            {
+                @if (item.Id_Factura == Convert.ToInt32(CurrentfactID))
+                {
+
+                    <tr>
+                        <th>@item.Nombre</th>
+                        <th>@item.Cantidad</th>
+                        <th>@item.Descripcion</th>
+
+
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <a class="nav-link" href="deletfact/@CurrentfactID/">
+                            <span class="oi oi-trash btn btn-danger" aria-hidden="true">Cancelar factura</span>
+    </a>
+
+    <a class="nav-link" href="EditFact/@CurrentfactID/@CurrentID">
+        <span class="oi oi-check btn btn-success" aria-hidden="true">Confirmar factura</span>
+    </a>
+
+}
+
+else
+{
+    <h1>No hay productos ni servicios disponibles</h1>
+}
+
+
+@code {
+
+    [Parameter]
+    public string CurrentID { get; set; }
+
+    [Parameter]
+    public string CurrentfactID { get; set; }
+
+    string selected;
+    string selectedserv;
+
+    int canti;
+    
+    string descr;
+    string servicedescr;
+    int serviceprice;
+
+    int money;
+
+    private Guid userId;
+
+    AppUser user = new AppUser();
+    Factura facturas = new Factura();
+
+
+    Producto_Facturado pfacturado = new Producto_Facturado();
+
+
+    [CascadingParameter]
+    private Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    List<Producto> product = new List<Producto>();
+
+    List<Servicio> servvice = new List<Servicio>();
+    List<Factura> facturaList = new List<Factura>();
+
+
+    List<ClienteFinal> client = new List<ClienteFinal>();
+    List<Producto_Facturado> prodfact = new List<Producto_Facturado>();
+
+    ClienteFinal getclient = new ClienteFinal();
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await Task.Run(() => Service.GetProductos());
+        client = await Task.Run(() => ServiceCl.GetClientes());
+        facturaList = await Task.Run(() => ServiceF.GetFactura());
+        getclient = await Task.Run(() => ServiceCl.GetClienteById(Convert.ToInt32(CurrentID)));
+        facturas = await Task.Run(() => ServiceF.GetFacturaById(Convert.ToInt32(CurrentfactID)));
+        prodfact = await Task.Run(() => ServiceProductoF.GetProductoFacturado());
+        servvice = await Task.Run(() => ServiceServicio.GetServicio());
+
+        var authState = await authenticationStateTask;
+        user = await UserManager.GetUserAsync(authState.User);
+        userId = user.Uid;
+    }
+
+ 
+    
+
+    void AgregarPfacturado()
+    {
+if ((selected != "") && (selected != null) && (canti>0))
+{
+
+        foreach (var prop in product)
+        {
+
+            if (prop.Nombre == selected)
+            {
+                descr = prop.Descripcion;
+                money = prop.Precio;
+            }
+        }
+
+
+        pfacturado.Nombre = selected;
+        pfacturado.Cantidad = canti;
+        pfacturado.Precio = money;
+        pfacturado.Descripcion = descr;
+        pfacturado.Id_Factura = Convert.ToInt32(CurrentfactID);
+        ServiceProductoF.Create(pfacturado);
+        NavigationManager.NavigateTo("AddFactura2" + "/" + CurrentID + "/" + CurrentfactID);
+}
+
+    }
+    void agregarservice()
+    {
+               if ((selectedserv != "") && (selectedserv != null))
+{
+        foreach (var prop in servvice)
+        {
+            if (prop.Nombre_Servicio == selectedserv)
+            {
+                servicedescr = prop.Descripcion;
+                serviceprice = prop.Precio_servicio;
+
+            }
+        }
+
+
+        pfacturado.Nombre = selectedserv;
+        pfacturado.Precio = serviceprice;
+        pfacturado.Descripcion = servicedescr;
+        pfacturado.Id_Factura = Convert.ToInt32(CurrentfactID);
+        ServiceProductoF.Create(pfacturado);
+        NavigationManager.NavigateTo("AddFactura2" + "/" + CurrentID + "/" + CurrentfactID);
+}
+
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("FacturaInfo");
+
+    }
+}

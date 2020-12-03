@@ -1,0 +1,39 @@
+@page "/MasVendidos"
+@using Final.Data
+@inject PFacturadoService Service
+
+<center>
+    <h2>Listado de Productos y Servicios Mas Vendidos</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Producto</th>
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var Highest in product_f.Distinct())
+      {
+          <tr>
+              <th scope="row">@Highest.IdProducto_Facturados</th>
+              <td>@Highest.Nombre</td>
+          </tr>
+
+      }
+  </tbody>
+</table>
+
+</center>
+
+
+
+@code{
+
+    List<Producto_Facturado> product_f = new List<Producto_Facturado>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        product_f = await Task.Run(() => Service.GetProductoFacturado());
+
+    }
+}

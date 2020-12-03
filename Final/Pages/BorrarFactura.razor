@@ -1,0 +1,81 @@
+﻿@page "/BorrarFactura/{CurrentID}"
+@using Final.Data
+@inject FacturaService Service
+@inject NavigationManager NavigationManager
+<h3>Eliminar Factura</h3>
+
+<hr />
+<h3>Estas seguro que quieres borrar esto?</h3>
+<div class="row">
+    <div class="form-group col-md-4">
+        <label>Factura ID:</label>
+        <label>@factura.Id_Factura</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Nombre del Producto:</label>
+        <label>@factura.Nombre_Producto</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Nombre del Servicio:</label>
+        <label>@factura.Nombre_Servicio</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Cantidad del Producto:</label>
+        <label>@factura.Cantidad_Prod</label>
+    </div>
+   
+    <div class="form-group col-md-4">
+        <label>Monto Total:</label>
+        <label>@factura.Monto_Total</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>ITBIS:</label>
+        <label>@factura.Itbis</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Fecha y Hora:</label>
+        <label>@factura.FechaYHora</label>
+    </div>
+    <div class="form-group col-md-4">
+        <label>Cliente ID:</label>
+        <label>@factura.Cliente_Id</label>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            <input type="button" class="btn btn-primary" @onclick="@DeleteFactura" value="Delete" />
+            <input type="button" class="btn btn-danger" @onclick="@Cancel" value="Cancel" />
+
+        </div>
+
+    </div>
+
+</div>
+
+@code {
+
+    [Parameter]
+    public string CurrentID { get; set; }
+    Factura factura = new Factura();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        factura = await Task.Run(() => Service.GetFacturaById(Convert.ToInt32(CurrentID)));
+
+    }
+
+    protected void DeleteFactura()
+    {
+        Service.DeleteFactura(factura);
+        NavigationManager.NavigateTo("FacturaInfo");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("FacturaInfo");
+
+    }
+
+}

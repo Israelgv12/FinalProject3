@@ -1,0 +1,68 @@
+﻿@page "/EditFacturado/{CurrentID}"
+@using Final.Data
+@inject PFacturadoService Service
+@inject NavigationManager NavigationManager
+
+<h3>Editar Producto Facturado</h3>
+<hr />
+
+<form>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <label for="Nombre">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" @bind="@facturado.Nombre">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputprecio">Cantidad</label>
+            <input type="text" class="form-control" id="precio" placeholder="Cantidad" @bind="@facturado.Cantidad">
+        </div>
+        <div class="form-group col-md-8">
+            <label for="inputcantidad">Descripcion</label>
+            <input type="text" class="form-control" id="cantidad" placeholder="Descripcion" @bind="@facturado.Descripcion">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputcantidad">IdFactura</label>
+            <input type="text" class="form-control" id="cantidad" placeholder="cantidad del servicio" @bind="@facturado.Id_Factura">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@UpdateFacturado" value="Update" />
+                <input type="button" class="btn btn-danger" @onclick="@Cancel" value="Cancel" />
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
+
+@code {
+
+    [Parameter]
+    public string CurrentID { get; set; }
+    Producto_Facturado facturado = new Producto_Facturado();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        facturado = await Task.Run(() => Service.GetProductoFacturadoById(Convert.ToInt32(CurrentID)));
+
+    }
+
+    protected void UpdateFacturado()
+    {
+        Service.UpdateProductoFacturado(facturado);
+        NavigationManager.NavigateTo("FacturadoInfo");
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("FacturadoInfo");
+
+    }
+
+
+}

@@ -1,0 +1,51 @@
+@page "/Clientes Especiales"
+@using Final.Data
+@inject FacturaService Service
+@inject ClienteService Service2
+<center>
+    <h2>Clientes Que mas han Comprado</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre Cliente</th>
+                <th scope="col">Total de Compras</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var fact in factura)
+            {
+                @foreach (var client in cliente)
+                {
+                    @if (fact.Cliente_Id==client.Cliente_Id)
+                    {
+                      @if(fact.Monto_Total >0){
+                        <tr>
+                            <th scope="row">@client.Cliente_Id</th>
+                            <td>@client.Nombre</td>
+                            <td>@fact.Monto_Total</td>
+                        </tr>
+                    }
+                    }
+                }
+            }
+        </tbody>
+    </table>
+
+</center>
+@code{
+
+    List<Factura> factura = new List<Factura>();
+    List<ClienteFinal> cliente = new List<ClienteFinal>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        factura = await Task.Run(() => Service.GetFactura());
+        cliente = await Task.Run(() => Service2.GetClientes());
+
+
+    }
+
+
+
+}

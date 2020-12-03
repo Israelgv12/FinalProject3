@@ -1,0 +1,48 @@
+@page "/ListadoExistencia"
+@using Final.Data
+@inject ProductoService Service
+
+
+<center>
+    <h2>Listado de Productos en Existencia</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Stock in product)
+            {
+                @if(Stock.Cantidad>0)
+                 {
+                    <tr>
+                        <th scope="row">@Stock.IdProducto</th>
+                        <td>@Stock.Nombre</td>
+                        <td>@Stock.Precio</td>
+                        <td>@Stock.Cantidad</td>
+                    </tr>
+
+                }
+            }
+        </tbody>
+    </table>
+
+</center>
+
+@code{
+
+    List<Producto> product = new List<Producto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        product = await Task.Run(() => Service.GetProductos());
+
+    }
+
+
+
+}

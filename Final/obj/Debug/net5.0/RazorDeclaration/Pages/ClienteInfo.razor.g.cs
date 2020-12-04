@@ -91,7 +91,7 @@ using Final.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 66 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\ClienteInfo.razor"
+#line 67 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\ClienteInfo.razor"
        
 
     List<ClienteFinal> cliente;

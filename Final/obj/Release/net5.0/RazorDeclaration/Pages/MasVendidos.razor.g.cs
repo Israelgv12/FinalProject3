@@ -13,70 +13,70 @@ namespace Final.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 1 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 2 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 3 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 4 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 5 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 6 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 7 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 8 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 9 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\daniel\Source\Repos\Final\Final\Pages\MasVendidos.razor"
+#line 2 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\MasVendidos.razor"
 using Final.Data;
 
 #line default
@@ -91,7 +91,7 @@ using Final.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 30 "C:\Users\daniel\Source\Repos\Final\Final\Pages\MasVendidos.razor"
+#line 30 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\MasVendidos.razor"
       
 
     List<Producto_Facturado> product_f = new List<Producto_Facturado>();

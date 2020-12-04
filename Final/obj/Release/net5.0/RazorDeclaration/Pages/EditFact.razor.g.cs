@@ -13,70 +13,70 @@ namespace Final.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 1 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 2 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 3 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 4 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 5 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 6 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 7 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 8 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 9 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\daniel\Source\Repos\Final\Final\Pages\EditFact.razor"
+#line 2 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\EditFact.razor"
 using Final.Data;
 
 #line default
@@ -91,7 +91,7 @@ using Final.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\daniel\Source\Repos\Final\Final\Pages\EditFact.razor"
+#line 28 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\EditFact.razor"
        
 
     [Parameter]
@@ -108,7 +108,7 @@ List<Producto_Facturado> pfacturado = new List<Producto_Facturado>();
 
     protected override async Task OnInitializedAsync()
     {
-        facturas = await Task.Run(() => Service.GetFacturaById(Convert.ToInt32(CurrentID)));
+        facturas = await Task.Run(() => Service.GetFacturaById(Convert.ToInt32(CurrentfactID)));
                 product = await Task.Run(() => ServiceP.GetProductos());
          pfacturado = await Task.Run(() => ServiceProductoF.GetProductoFacturado());
 
@@ -119,9 +119,16 @@ List<Producto_Facturado> pfacturado = new List<Producto_Facturado>();
     {
    foreach(var item in pfacturado){
 if(item.Id_Factura == facturas.Id_Factura){
+ if(item.Cantidad > 0){
 montoTotal += item.Precio*item.Cantidad;
-productoCant += item.Cantidad;
+productoCant = item.Cantidad;
 Nprod= item.Nombre;
+}
+else{
+montoTotal = item.Precio;
+productoCant = item.Cantidad;
+Nprod= item.Nombre;
+}
 }
 
 foreach(var p in product){
@@ -141,7 +148,7 @@ idprod = p.IdProducto;
   facturas.Monto_Total = montoTotal;
   facturas.Itbis = itbis;
         Service.UpdateFactura(facturas);
-        NavigationManager.NavigateTo("EditProd" + "/" + idpr + "/" + @CurrentID);
+        NavigationManager.NavigateTo("EditProd"  + "/" + CurrentID + "/" + CurrentfactID);
     }
     void Cancel()
     {

@@ -4,10 +4,6 @@
 
 
 
-<NavLink class="nav-link" href="AgregarFactura">
-    <span class="oi oi-plus" aria-hidden="true"></span>&nbsp; Agregar Factura
-
-</NavLink>
 
 <h3>Listado de Facturas</h3>
 
@@ -45,9 +41,7 @@ else
                     <td>@prop.FechaYHora</td>
                     <td>@prop.Cliente_Id</td>
                     <td>
-                        <a class="nav-link" href="EditarFactura/@prop.Id_Factura">
-                            <span class="oi oi-pencil" aria-hidden="true"></span>Editar
-                        </a>
+                       
                         <a class="nav-link" href="BorrarFactura/@prop.Id_Factura">
                             <span class="oi oi-trash" aria-hidden="true"></span>Borrar
                         </a>

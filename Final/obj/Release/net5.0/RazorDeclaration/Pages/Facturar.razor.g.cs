@@ -13,77 +13,77 @@ namespace Final.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 1 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 2 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 3 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 4 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 5 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 6 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 7 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 8 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 9 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Final.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\daniel\Source\Repos\Final\Final\Pages\Facturar.razor"
+#line 2 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\Facturar.razor"
 using Final.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\daniel\Source\Repos\Final\Final\Pages\Facturar.razor"
+#line 3 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\Facturar.razor"
 using Microsoft.AspNetCore.Identity;
 
 #line default
@@ -98,171 +98,176 @@ using Microsoft.AspNetCore.Identity;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 190 "C:\Users\daniel\Source\Repos\Final\Final\Pages\Facturar.razor"
+#line 163 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\Facturar.razor"
        
+    DateTime now = DateTime.Now;
 
-  int idcliente;
-string selected;
-string selectedserv;
+    int idcliente;
+    string selected;
+    string selectedserv;
 
-string clientess;
-int canti;
-int carr;
-int principal1 = 1;
-int carr1 = 0;
-int idfact;
-string descr;
-string servicedescr;
-int serviceprice;
+    string clientess;
+    int canti;
+    int carr;
+    int principal1 = 1;
+    int carr1 = 0;
+    int idfact;
+    string descr;
+    string servicedescr;
+    int serviceprice;
 
-string  curId;
-int money;
-private Guid userId;
-string idclien;
+    string  curId;
+    int money;
+    private Guid userId;
+    string idclien;
 
-AppUser user = new AppUser();
-Factura facturas = new Factura();
-
-
-Producto_Facturado pfacturado = new Producto_Facturado();
+    AppUser user = new AppUser();
+    Factura facturas = new Factura();
 
 
-[CascadingParameter]
+    Producto_Facturado pfacturado = new Producto_Facturado();
+
+
+    [CascadingParameter]
     private Task<AuthenticationState> authenticationStateTask { get; set; }
 
-       List<Producto> product = new List<Producto>();
+    List<Producto> product = new List<Producto>();
 
-                List<Servicio> servvice = new List<Servicio>();
+    List<Servicio> servvice = new List<Servicio>();
 
 
-       List<ClienteFinal> client = new List<ClienteFinal>();
-                 List<Producto_Facturado> prodfact = new List<Producto_Facturado>();
+    List<ClienteFinal> client = new List<ClienteFinal>();
+    List<Producto_Facturado> prodfact = new List<Producto_Facturado>();
 
 
     protected override async Task OnInitializedAsync()
     {
         product = await Task.Run(() => Service.GetProductos());
-         client = await Task.Run(() => ServiceCl.GetClientes());
+        client = await Task.Run(() => ServiceCl.GetClientes());
 
-         prodfact = await Task.Run(() => ServiceProductoF.GetProductoFacturado());
+        prodfact = await Task.Run(() => ServiceProductoF.GetProductoFacturado());
         servvice = await Task.Run(() => ServiceServicio.GetServicio());
 
-         var authState = await authenticationStateTask;
+        var authState = await authenticationStateTask;
         user = await UserManager.GetUserAsync(authState.User);
         userId = user.Uid;
     }
 
+    protected void carrito(){
+        carr = 1;
+        carr1 = 1;
+        principal1 = 2;
+        idclien = idcliente.ToString();
+
+        Console.WriteLine("inicio");
+
+        facturas.Nombre_Producto = "";
+        facturas.Nombre_Servicio = "";
+        facturas.Cantidad_Prod = 0;
+        facturas.Monto_Total = 0;
+        facturas.Itbis = 0;
+        facturas.FechaYHora= now.ToString();
+        facturas.Cliente_Id = idcliente;
+        facturas.Uid = userId;
+        Console.WriteLine("casi");
+
+        ServiceF.Create(facturas);
+        idfact = facturas.Id_Factura;
+
+        Console.WriteLine("guardado");
+        curId = idfact.ToString();
 
 
-    
-protected void carrito(){
-    carr = 1;
-    carr1 = 1;
-    principal1 = 2;
- idclien = idcliente.ToString();
-
-Console.WriteLine("inicio");
-       
-       facturas.Nombre_Producto = "";
-       facturas.Nombre_Servicio = "";
-       facturas.Cantidad_Prod = 0;
-       facturas.Monto_Total = 0;
-       facturas.Itbis = 0;
-       facturas.FechaYHora= "";
-       facturas.Cliente_Id = idcliente;
-       facturas.Uid = userId;
-              Console.WriteLine("casi");
-
-       ServiceF.Create(facturas);
-       idfact = facturas.Id_Factura;
-
-       Console.WriteLine("guardado");
-       curId = idfact.ToString();
-
-
-}
-protected void dcarrito(){
-    
- 
-
- 
-}
-
-protected void BorrarFactura(){
-carr = 0;
-    carr1 = 0;
-    principal1 = 1;
-
-ServiceF.DeleteFactura(facturas); 
-}
-
-
-
-void getidclient(){
-  if(clientess != ""){
-carr = 2;
-    principal1 = 2;
-
- foreach(var cl in client)
-            {
-               if (cl.Nombre==clientess)
-    {
-      
-              idcliente = cl.Cliente_Id;
     }
+    protected void dcarrito(){
+
+
+
+
+    }
+
+    protected void BorrarFactura(){
+        carr = 0;
+        carr1 = 0;
+        principal1 = 1;
+
+        ServiceF.DeleteFactura(facturas);
+    }
+
+
+
+    void getidclient(){
+if ((clientess != "") && (clientess != null))
+{
+            carr = 2;
+            principal1 = 2;
+
+            foreach(var cl in client)
+            {
+                if (cl.Nombre==clientess)
+                {
+
+                    idcliente = cl.Cliente_Id;
+                }
 
 
             }
 
-            
-       }     
-}
+
+        }
+    }
 
 
     void AgregarPfacturado(){
-
-       foreach(var prop in product)
-            {
-           if(prop.Nombre == selected){
-descr = prop.Descripcion;
-money = prop.Precio;
-}
+if ((selected != "") && (selected != null) && (canti>0))
+{
+        foreach(var prop in product)
+        {
+            if(prop.Nombre == selected){
+                descr = prop.Descripcion;
+                money = prop.Precio;
             }
-           
-      
-      pfacturado.Nombre = selected;
-      pfacturado.Cantidad = canti;
-      pfacturado.Precio = money;
-      pfacturado.Descripcion = descr;
-      pfacturado.Id_Factura = idfact;
-      ServiceProductoF.Create(pfacturado);
-              NavigationManager.NavigateTo("AddFactura" + "/" + idclien + "/" + curId);
+        }
+
+
+        pfacturado.Nombre = selected;
+        pfacturado.Cantidad = canti;
+        pfacturado.Precio = money;
+        pfacturado.Descripcion = descr;
+        pfacturado.Id_Factura = idfact;
+        ServiceProductoF.Create(pfacturado);
+        NavigationManager.NavigateTo("AddFactura" + "/" + idclien + "/" + curId);
+        
+}
 
     }
     void agregarservice(){
-       idclien = idcliente.ToString();
+        idclien = idcliente.ToString();
 
+if ((selectedserv != "") && (selectedserv != null))
+{
         foreach(var prop in servvice)
-            {
-           if(prop.Nombre_Servicio == selectedserv){
-servicedescr = prop.Descripcion;
-
-}
+        {
+            if(prop.Nombre_Servicio == selectedserv){
+                servicedescr = prop.Descripcion;
+                serviceprice = prop.Precio_servicio;
             }
-           
-      
-      pfacturado.Nombre = selectedserv;
-      pfacturado.Precio = serviceprice;
-      pfacturado.Descripcion = servicedescr; 
-      pfacturado.Id_Factura = idfact;
-      ServiceProductoF.Create(pfacturado);
-                    NavigationManager.NavigateTo("AddFactura" + "/" + idclien + "/" + curId);
+        }
+
+
+        pfacturado.Nombre = selectedserv;
+        pfacturado.Precio = serviceprice;
+        pfacturado.Descripcion = servicedescr;
+        pfacturado.Id_Factura = idfact;
+        ServiceProductoF.Create(pfacturado);
+        NavigationManager.NavigateTo("AddFactura" + "/" + idclien + "/" + curId);
+}
 
     }
-        void Cancel()
+    void Cancel()
     {
         NavigationManager.NavigateTo("FacturaInfo");
-        
+
 
     }
     

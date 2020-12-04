@@ -13,68 +13,76 @@ namespace Final.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 1 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 2 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 3 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 4 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 5 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 6 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 7 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 8 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Final;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\daniel\Source\Repos\Final\Final\_Imports.razor"
+#line 9 "C:\Users\daniel\Source\Repos\FinalProject3\Final\_Imports.razor"
 using Final.Shared;
 
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\Print.razor"
+using Final.Data;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Print/{CurrentID}")]
     public partial class Print : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -82,6 +90,51 @@ using Final.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 113 "C:\Users\daniel\Source\Repos\FinalProject3\Final\Pages\Print.razor"
+           
+        double total;
+
+        [Parameter]
+        public string CurrentID { get; set; }
+
+        [Parameter]
+        public string CurrentfactID { get; set; }
+        List<Producto_Facturado> prodfact = new List<Producto_Facturado>();
+
+        List<Factura> facturas = new List<Factura>();
+
+        List<ClienteFinal> client = new List<ClienteFinal>();
+
+
+
+        protected override async Task OnInitializedAsync()
+        {
+
+            facturas = await Task.Run(() => Service.GetFactura());
+            prodfact = await Task.Run(() => ServiceProductoF.GetProductoFacturado());
+            client = await Task.Run(() => ServiceCL.GetClientes());
+
+
+            foreach (var fc in facturas)
+            {
+                if (fc.Id_Factura == Convert.ToInt32(CurrentID))
+                {
+                    total = fc.Monto_Total + fc.Itbis;
+                }
+            }
+        }
+
+
+    
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ClienteService ServiceCL { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private FacturaService Service { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private PFacturadoService ServiceProductoF { get; set; }
     }
 }
 #pragma warning restore 1591
